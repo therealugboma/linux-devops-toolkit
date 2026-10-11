@@ -2,7 +2,11 @@
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 CONFIG_FILE="$SCRIPT_DIR/../config/services.conf"
+
+LOG_DIR="$SCRIPT_DIR/../logs"
 LOG_FILE="$SCRIPT_DIR/../logs/service-monitor.log"
+
+mkdir -p "$LOG_DIR"
 
 DATE=$(date "+%Y-%m-%d %H:%M:%S")
 
